@@ -7,17 +7,12 @@ Note: оценки всегда будут уникальными (поэтом�
 
 function myLanguages(results) {
 
-    // Создаем новый массив ключей словаря
-    let languages = Object.keys(results);
-    
-    // Фильтруем языки, у которых значения баллов >= 60
-    let passedLanguages = languages.filter(language => results[language] >= 60);
-    
-    // Сортируем языки по убыванию баллов
-    passedLanguages.sort((a, b) => results[b] - results[a]);
-    
-    return passedLanguages;
-    }
+  let languages = Object.keys(results);
+  let passedLanguages = languages.filter(language => results[language] >= 60);
+  passedLanguages.sort((a, b) => results[b] - results[a]);
+
+  return passedLanguages;
+}
 
 
 

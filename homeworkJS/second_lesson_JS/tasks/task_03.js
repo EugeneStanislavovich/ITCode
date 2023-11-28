@@ -4,9 +4,10 @@
 * */
 
 function getVowelsCount(str) {
-    var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
-    var count = 0;
-    for (var i = 0; i < str.length; i++)
+    
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+    let count = 0;
+    for (let i = 0; i < str.length; i++)
         if (vowels.indexOf(str[i]) !== -1)
             count++;
 
