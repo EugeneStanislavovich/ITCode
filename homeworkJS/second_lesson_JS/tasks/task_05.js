@@ -5,10 +5,10 @@
 
 function abs(array) {
 
-  let sum = array.reduce((a, b) => a + b, 0); 
+  let sum = array.reduce((a, b) => a + b, 0);
   let half = sum / 2;
 
-  return Math.round(half * 10) / 10; 
+  return Math.round(half * 10) / 10;
 }
 
 

@@ -6,5 +6,5 @@ function reverseString(str) {
   
   return result.join('')
 }
-//
+
 module.exports = reverseString;
