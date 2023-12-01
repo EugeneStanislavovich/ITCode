@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 500;
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 100px;
+}
+.game-title {
+  margin: auto;
+  width:300px;
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px black solid;
+  border-radius: 10px;
+
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 304px;
+  margin: 0 auto 50px;
+  margin-top: 100px;
+  border: 2px solid #000;
+}
+
+.game-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 96px;
+  border: 2px solid #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  transition: all linear 0.3s;
+}
+
+.game-item:hover {
+  background-color: #5e5d5d85;
+}
+
+.game-item.o {
+  background-color: #05f705;
+}
+
+.game-item.x {
+  background-color: rgb(248, 5, 5);
+}
+
+#reset-game {
+  display: block;
+  font-size: large;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: #5e5d5d85;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+#reset-game:hover {
+  background-color: #ccc;
+}
